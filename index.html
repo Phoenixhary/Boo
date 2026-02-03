@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love 💕</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Floating Hearts Background Container -->
+    <div class="floating-hearts" id="floatingHearts"></div>
+
+    <!-- Sparkles Container -->
+    <div class="sparkles-container" id="sparklesContainer"></div>
+
+    <!-- Confetti Container -->
+    <div class="confetti-container" id="confettiContainer"></div>
+
+    <!-- Music Toggle Button -->
+    <button class="music-toggle" id="musicToggle" aria-label="Toggle Music">
+        <span class="music-icon">🎵</span>
+        <span class="music-status">OFF</span>
+    </button>
+
+    <!-- Background Music -->
+    <audio id="bgMusic" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- ==================== SECTION 1: HERO ==================== -->
+    <section class="section hero-section active" id="heroSection">
+        <div class="content-wrapper">
+            <div class="hero-hearts">
+                <span class="heart heart-1">💕</span>
+                <span class="heart heart-2">💗</span>
+                <span class="heart heart-3">💖</span>
+            </div>
+
+            <h1 class="hero-title">Hi My Love 💕</h1>
+
+            <p class="hero-subtitle">
+                I made this just for you because you mean everything to me
+            </p>
+
+            <button class="btn btn-primary pulse" id="continueBtn">
+                Tap to Continue 💗
+            </button>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION 2: QUESTION ==================== -->
+    <section class="section question-section" id="questionSection">
+        <div class="content-wrapper">
+            <div class="card question-card">
+                <div class="card-sparkle">✨</div>
+
+                <h2 class="question-text" id="questionText">
+                    Will you be my Iyawo Ayooka mi? 🥺💍
+                </h2>
+
+                <div class="button-container" id="buttonContainer">
+                    <button class="btn btn-yes" id="yesBtn">YES 💖</button>
+                    <button class="btn btn-no" id="noBtn">NO 🙈</button>
+                </div>
+            </div>
+
+            <!-- Celebration Container (Hidden by default) -->
+            <div class="celebration-container hidden" id="celebrationContainer">
+                <div class="dancing-teddy">🧸</div>
+                <h2 class="celebration-text">
+                    YAYYYYY!!! You just made me the happiest person alive 💕😭
+                </h2>
+                <button class="btn btn-primary" id="nextSectionBtn">
+                    Continue 💕
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION 3: LIFETIME QUESTION ==================== -->
+    <section class="section lifetime-section" id="lifetimeSection">
+        <div class="content-wrapper">
+            <div class="card lifetime-card">
+                <div class="card-flowers">🌸</div>
+
+                <h2 class="lifetime-question">
+                    Will you spend the rest of your life with me Oyin mi? 💕🌸
+                </h2>
+
+                <div class="button-container">
+                    <button class="btn btn-forever" id="foreverBtn">Forever 💍</button>
+                    <button class="btn btn-always" id="alwaysBtn">Always 💖</button>
+                </div>
+            </div>
+
+            <!-- Lifetime Answer Container (Hidden by default) -->
+            <div class="lifetime-answer-container hidden" id="lifetimeAnswerContainer">
+                <div class="hearts-rain" id="heartsRain"></div>
+                <h2 class="lifetime-answer-text">
+                    I can't wait to build forever with you 🥺❤️
+                </h2>
+                <button class="btn btn-primary" id="loveNoteBtn">
+                    Continue to Love Note 💌
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION 4: LOVE NOTE ==================== -->
+    <section class="section lovenote-section" id="lovenoteSection">
+        <div class="content-wrapper">
+            <div class="card lovenote-card">
+                <div class="note-decoration top-left">💗</div>
+                <div class="note-decoration top-right">💗</div>
+                <div class="note-decoration bottom-left">💗</div>
+                <div class="note-decoration bottom-right">💗</div>
+
+                <p class="lovenote-text" id="lovenoteText">
+                    You are my favorite person, my safe place, my best friend, and my forever. I choose you today and always 💗
+                </p>
+            </div>
+
+            <button class="btn btn-primary" id="finalBtn">
+                See Our Forever 💞
+            </button>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION 5: FINAL SCREEN ==================== -->
+    <section class="section final-section" id="finalSection">
+        <div class="content-wrapper">
+            <div class="final-hearts">
+                <span class="bouncing-heart">💞</span>
+                <span class="bouncing-heart delay-1">💖</span>
+                <span class="bouncing-heart delay-2">💕</span>
+            </div>
+
+            <h1 class="final-title">Officially Yours Forever 💞</h1>
+
+            <div class="dancing-emojis">
+                <span class="emoji dance-1">🥰</span>
+                <span class="emoji dance-2">😘</span>
+                <span class="emoji dance-3">💑</span>
+                <span class="emoji dance-4">👩‍❤️‍👨</span>
+                <span class="emoji dance-5">💏</span>
+            </div>
+
+            <button class="btn btn-primary replay-btn" id="replayBtn">
+                Replay Love Story 💕
+            </button>
+        </div>
+    </section>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
